@@ -9,45 +9,216 @@
     <title>Currículum Vitae de Danilo Drouet</title>
 </head>
 <body>
-    <header>
-        <h1>Danilo Drouet</h1>
-        <p>Profesión: Ingenieria en computacion</p>
+    <nav style="margin-bottom: 24px;">
+        <ul style="display: flex; gap: 16px; list-style: none; padding: 0;">
+            <li><a href="#datos-personales">Datos Personales</a></li>
+            <li><a href="#video-presentacion">Video de Presentación</a></li>
+            <li><a href="#datos-contacto">Datos de Contacto</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#formulario-contacto">Formulario de Contacto</a></li>
+            <li><a href="#justificacion">Justificación</a></li>
+            <li><a href="#referencias">Referencias</a></li>
+        </ul>
+    </nav>
+
+    <header style="display: flex; align-items: center; gap: 24px;">
+        <img src="fotos/foto.jpg" alt="Foto de perfil de Danilo Drouet" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%; border: 2px solid #ccc;">
+        <div>
+            <h1>Danilo Drouet</h1>
+            <p>Profesión: Ingeniería en Computación</p>
+        </div>
     </header>
 
-    <section>
+    <section id="datos-personales">
+        <h2>Datos Personales</h2>
+        <ul>
+            <li>Nacionalidad: Ecuatoriano</li>
+            <li>Dirección: Guayaquil, Ecuador</li>
+        </ul>
+    </section>
+
+    <section id="video-presentacion">
+        <h2>Video de Presentación</h2>
+        <div style="display: flex; justify-content: center;">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/W5LPcpIRLzs" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <section id="datos-contacto">
         <h2>Datos de Contacto</h2>
         <ul>
             <li>Teléfono: 0996416931</li>
             <li>Email: ddrouet@espol.edu.ec</li>
-            
         </ul>
+        <div style="margin-top: 10px;">
+            <strong>Ubicación:</strong>
+            <p>Escuela Superior Politécnica del Litoral (ESPOL) - Guayaquil, Ecuador</p>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.527907396059!2d-79.94364268475857!3d-2.144893439125474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d57a66dfd897f7d%3A0x75c5c4acaa14b6bb!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses-419!2sec!4v1684217253139!5m2!1ses-419!2sec"
+                    width="100%" 
+                    height="250" 
+                    style="border:0; max-width: 600px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C</li>
-        </ul>
-    </section>
-
-    <section>
+    <section id="educacion">
         <h2>Educación</h2>
         <article>
-            <h3>[Título Obtenido/ en proceso]</h3>
-            <p><strong>Institución:</strong> Espol</p>
+            <h3>[Título Obtenido/en proceso]</h3>
+            <p><strong>Institución:</strong> ESPOL</p>
             <p><strong>Duración:</strong> 2023 - pronto</p>
         </article>
-        <!-- Repite el bloque <article> para más estudios -->
     </section>
 
-    <section>
-        <h2>Idiomas</h2>
+    <section id="formulario-contacto">
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post" style="display: flex; flex-direction: column; gap: 16px; max-width: 400px; margin: 0 auto;">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="motivo">Motivo de contacto:</label>
+            <select id="motivo" name="motivo" required>
+                <option value="">Seleccione una opción</option>
+                <option value="consulta">Consulta</option>
+                <option value="trabajo">Oferta de trabajo</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <fieldset>
+                <legend>¿Desea recibir respuesta?</legend>
+                <label>
+                    <input type="radio" name="respuesta" value="si" required>
+                    Sí
+                </label>
+                <label>
+                    <input type="radio" name="respuesta" value="no" required>
+                    No
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Áreas de interés:</legend>
+                <label>
+                    <input type="checkbox" name="interes[]" value="desarrollo" required>
+                    Desarrollo
+                </label>
+                <label>
+                    <input type="checkbox" name="interes[]" value="soporte" required>
+                    Soporte
+                </label>
+                <label>
+                    <input type="checkbox" name="interes[]" value="investigacion" required>
+                    Investigación
+                </label>
+            </fieldset>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="justificacion">
+        <h2>Justificación del uso de etiquetas HTML semánticas</h2>
+        <p>
+            El uso de etiquetas semánticas en HTML mejora la estructura, accesibilidad y comprensión del contenido tanto para los navegadores como para los usuarios. Puedes aprender más sobre semántica HTML en 
+            <a href="https://developer.mozilla.org/es/docs/Glossary/Semantics" target="_blank">MDN Web Docs</a>.
+        </p>
+
+        <h3>Idiomas</h3>
+        <table>
+            <tr>
+                <th>Idioma</th>
+                <th>Nivel</th>
+            </tr>
+            <tr>
+                <td>Español</td>
+                <td>Nativo</td>
+            </tr>
+            <tr>
+                <td>Inglés</td>
+                <td>B1</td>
+            </tr>
+        </table>
+
+        <h3>Tabla de ejemplo de conocimientos</h3>
+        <table>
+            <tr>
+                <th></th>
+                <th>Lenguaje</th>
+                <th>Nivel</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>Python</td>
+                <td>Avanzado</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Java</td>
+                <td>Intermedio</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>C</td>
+                <td>Básico</td>
+            </tr>
+        </table>
+
+        <h3>Cualidades</h3>
         <ul>
-            <li>ingles - Nivel B1</li>
-            <li>Español - nativo</li>
+            <li>Responsabilidad</li>
+            <li>Trabajo en equipo</li>
+            <li>Puntualidad</li>
         </ul>
+    </section>
+
+    <section id="referencias">
+        <h2>Referencias</h2>
+        <article>
+            <blockquote>
+                "Danilo demostró gran profesionalismo y dedicación en todos los proyectos en los que colaboró con nuestro equipo."
+            </blockquote>
+            <p>
+                <strong>Sebastian Manzanilla</strong><br>
+                Gerente de Proyectos en TechSolutions<br>
+                Sebastian trabajó con Danilo durante dos años, liderando proyectos de desarrollo de software donde Danilo fue pieza clave para el éxito del equipo.
+            </p>
+        </article>
+        <article>
+            <blockquote>
+                "Su capacidad para resolver problemas y su actitud positiva marcaron la diferencia en nuestro departamento."
+            </blockquote>
+            <p>
+                <strong>Reynaldo Saltos</strong><br>
+                Jefe de Soporte Técnico en Innovatech<br>
+                Carlos fue supervisor directo de Danilo y destaca su compromiso y habilidades técnicas en la resolución de incidencias complejas.
+            </p>
+        </article>
+        <article>
+            <blockquote>
+                "Siempre mostró iniciativa y una excelente disposición para aprender y compartir conocimientos con sus compañeros."
+            </blockquote>
+            <p>
+                <strong>Paul Perdomo</strong><br>
+                Coordinadora de Proyectos en EducaRed<br>
+                Lucía colaboró con Danilo en proyectos educativos, resaltando su liderazgo y trabajo colaborativo.
+            </p>
+        </article>
     </section>
 
     <footer>
