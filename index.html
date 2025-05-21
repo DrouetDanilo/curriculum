@@ -7,6 +7,8 @@
     <meta name="description" content="Este es el currículum vitae de Danilo Drouet.">
     <meta name="author" content="Danilo Drouet">
     <title>Currículum Vitae de Danilo Drouet</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav style="margin-bottom: 24px;">
@@ -22,7 +24,7 @@
     </nav>
 
     <header style="display: flex; align-items: center; gap: 24px;">
-        <img src="fotos/foto.jpg" alt="Foto de perfil de Danilo Drouet" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%; border: 2px solid #ccc;">
+        <img src="fotos/foto.jpg" id="photo" alt="Foto de perfil de Danilo Drouet" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%; border: 2px solid #ccc;">
         <div>
             <h1>Danilo Drouet</h1>
             <p>Profesión: Ingeniería en Computación</p>
@@ -30,7 +32,7 @@
     </header>
 
     <section id="datos-personales">
-        <h2>Datos Personales</h2>
+        <h2 class="subtitle">Datos Personales</h2>
         <ul>
             <li>Nacionalidad: Ecuatoriano</li>
             <li>Dirección: Guayaquil, Ecuador</li>
@@ -38,7 +40,7 @@
     </section>
 
     <section id="video-presentacion">
-        <h2>Video de Presentación</h2>
+        <h2 class="subtitle">Video de Presentación</h2>
         <div style="display: flex; justify-content: center;">
             <iframe 
                 width="560" 
@@ -53,7 +55,7 @@
     </section>
 
     <section id="datos-contacto">
-        <h2>Datos de Contacto</h2>
+        <h2 class="subtitle">Datos de Contacto</h2>
         <ul>
             <li>Teléfono: 0996416931</li>
             <li>Email: ddrouet@espol.edu.ec</li>
@@ -75,7 +77,7 @@
     </section>
 
     <section id="educacion">
-        <h2>Educación</h2>
+        <h2 class="subtitle">Educación</h2>
         <article>
             <h3>[Título Obtenido/en proceso]</h3>
             <p><strong>Institución:</strong> ESPOL</p>
@@ -84,7 +86,7 @@
     </section>
 
     <section id="formulario-contacto">
-        <h2>Formulario de Contacto</h2>
+        <h2 class="subtitle">Formulario de Contacto</h2>
         <form action="#" method="post" style="display: flex; flex-direction: column; gap: 16px; max-width: 400px; margin: 0 auto;">
             <label for="nombre">Nombre completo:</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -133,7 +135,7 @@
     </section>
 
     <section id="justificacion">
-        <h2>Justificación del uso de etiquetas HTML semánticas</h2>
+        <h2 class="subtitle">Justificación del uso de etiquetas HTML semánticas</h2>
         <p>
             El uso de etiquetas semánticas en HTML mejora la estructura, accesibilidad y comprensión del contenido tanto para los navegadores como para los usuarios. Puedes aprender más sobre semántica HTML en 
             <a href="https://developer.mozilla.org/es/docs/Glossary/Semantics" target="_blank">MDN Web Docs</a>.
@@ -188,7 +190,7 @@
     </section>
 
     <section id="referencias">
-        <h2>Referencias</h2>
+        <h2 class="subtitle">Referencias</h2>
         <article>
             <blockquote>
                 "Danilo demostró gran profesionalismo y dedicación en todos los proyectos en los que colaboró con nuestro equipo."

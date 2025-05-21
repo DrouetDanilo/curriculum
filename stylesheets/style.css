@@ -1,0 +1,31 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, nav, header, section, article, footer, table, th, td, form, label, input, select, textarea, button, fieldset, legend, blockquote, strong, a {
+    font-family: 'Outfit', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Selector por id para #photo */
+#photo {
+    width: 8vw;
+    height: auto;
+}
+
+/* Selector por clase para .subtitle */
+.subtitle {
+    color: rgb(151 156 165 / 0.89);
+    text-transform: uppercase;
+}
+
+/* Selector para <p> dentro de <footer> */
+footer p {
+    text-align: right;
+    font-style: italic;
+}
+
+/* Selector para <ul> hija inmediata de <nav> */
+nav > ul {
+    list-style: none;
+}
