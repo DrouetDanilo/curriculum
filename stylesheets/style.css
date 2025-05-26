@@ -28,6 +28,11 @@ footer p {
 /* Selector para <ul> hija inmediata de <nav> */
 nav > ul {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
 }
 
 /* Selector por elemento para <section> */
@@ -37,3 +42,149 @@ section {
     margin-bottom: 1.2rem;
     padding: 1.5% 0.8%;
 }
+
+/* Selector para <form> hija dentro de <section> */
+section > form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* Grid: organización de la sección de referencias */
+#referencias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+}
+
+#referencias > h2 {
+    grid-column: 1 / 4;
+}
+
+#referencias > article {
+    /* Cada artículo ocupa una columna */
+}
+
+/* Flex: organización de la sección de referencias */
+#referencias.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#referencias.flex > h2 {
+    width: 100%;
+}
+
+#referencias.flex > .articulos {
+    display: flex;
+    gap: 1rem;
+}
+
+#referencias.flex > .articulos > article {
+    flex: 1 1 0;
+}
+
+/* Paleta principal: #23272b (negro pálido), #495057 (gris profesional) */
+
+body {
+    background: linear-gradient(135deg, #23272b 0%, #495057 100%);
+    color: #fff;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Outfit', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navegación */
+nav {
+    background-color: #23272b;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 8px rgba(35, 39, 43, 0.08);
+}
+nav > ul {
+    background: transparent;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+nav a:hover {
+    background: #495057;
+    color: #fff;
+}
+
+/* Encabezado */
+header {
+    background: #495057;
+    color: #fff;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem 2rem;
+    box-shadow: 0 2px 12px rgba(35, 39, 43, 0.07);
+}
+
+/* Secciones */
+section {
+    background: rgba(255,255,255,0.85);
+    color: #23272b;
+    border: 0.2pt solid #cedddd;
+    margin: 4px 2px 8px 2px;
+    margin-bottom: 1.2rem;
+    padding: 1.5% 0.8%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(73, 80, 87, 0.07);
+}
+
+/* Subtítulos */
+.subtitle {
+    color: #23272b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Botón del formulario */
+button, input[type="submit"] {
+    background: #23272b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6em 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover, input[type="submit"]:hover {
+    background: #495057;
+    color: #fff;
+}
+
+/* Inputs y selects */
+input, select, textarea {
+    border: 1px solid #495057;
+    border-radius: 4px;
+    padding: 0.4em 0.7em;
+    background: #f8fcff;
+    color: #23272b;
+    font-family: inherit;
+    margin-bottom: 0.5rem;
+}
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #495057;
+}
+
+/* Footer */
+footer {
+    background: #23272b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 0 0 12px 12px;
+    margin-top: 2rem;
+}
+
+/* Otros estilos existentes permanecen igual */
