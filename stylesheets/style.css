@@ -89,12 +89,57 @@ section > form {
 /* Paleta principal: #23272b (negro pálido), #495057 (gris profesional) */
 
 body {
-    background: linear-gradient(135deg, #23272b 0%, #495057 100%);
+    background: linear-gradient(120deg, #23272b, #495057, #6c757d, #23272b);
+    background-size: 400% 400%;
+    animation: fondoAnimado 15s ease-in-out infinite;
     color: #fff;
     min-height: 100vh;
     margin: 0;
     font-family: 'Outfit', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: aparecerDesdeArriba 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
+
+@keyframes fondoAnimado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes aparecerDesdeArriba {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación de aparición secuencial */
+.aparecer {
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: aparecerDesdeArriba 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+nav.aparecer      { animation-delay: 0.2s; }
+header.aparecer   { animation-delay: 0.5s; }
+section.aparecer  { animation-delay: 0.8s; }
+footer.aparecer   { animation-delay: 1.4s; }
+
+/* Si tienes varias secciones, puedes usar nth-of-type para escalonar el delay */
+section.aparecer:nth-of-type(1) { animation-delay: 0.8s; }
+section.aparecer:nth-of-type(2) { animation-delay: 1.0s; }
+section.aparecer:nth-of-type(3) { animation-delay: 1.2s; }
+section.aparecer:nth-of-type(4) { animation-delay: 1.4s; }
+section.aparecer:nth-of-type(5) { animation-delay: 1.6s; }
+section.aparecer:nth-of-type(6) { animation-delay: 1.8s; }
+section.aparecer:nth-of-type(7) { animation-delay: 2.0s; }
 
 /* Navegación */
 nav {
@@ -185,6 +230,34 @@ footer {
     padding: 1rem 0;
     border-radius: 0 0 12px 12px;
     margin-top: 2rem;
+}
+
+/* Tabla de conocimientos */
+.tabla-conocimientos {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background: #f8fcff;
+    color: #23272b;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(73, 80, 87, 0.10);
+}
+
+.tabla-conocimientos th, .tabla-conocimientos td {
+    border: 1px solid #cedddd;
+    padding: 0.7em 1em;
+    text-align: center;
+}
+
+.tabla-conocimientos th {
+    background: #495057;
+    color: #fff;
+    font-weight: bold;
+}
+
+.tabla-conocimientos tr:nth-child(even) {
+    background: #e9ecef;
 }
 
 /* Otros estilos existentes permanecen igual */

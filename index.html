@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav style="margin-bottom: 24px;">
+    <nav class="aparecer" style="margin-bottom: 24px;">
         <ul style="display: flex; gap: 16px; list-style: none; padding: 0;">
             <li><a href="#datos-personales">Datos Personales</a></li>
             <li><a href="#video-presentacion">Video de Presentación</a></li>
@@ -23,7 +23,7 @@
         </ul>
     </nav>
 
-    <header style="display: flex; align-items: center; gap: 24px;">
+    <header class="aparecer" style="display: flex; align-items: center; gap: 24px;">
         <img src="fotos/foto.jpg" id="photo" alt="Foto de perfil de Danilo Drouet" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%; border: 2px solid #ccc;">
         <div>
             <h1>Danilo Drouet</h1>
@@ -31,7 +31,7 @@
         </div>
     </header>
 
-    <section id="datos-personales">
+    <section class="aparecer" id="datos-personales">
         <h2 class="subtitle">Datos Personales</h2>
         <ul>
             <li>Nacionalidad: Ecuatoriano</li>
@@ -39,7 +39,7 @@
         </ul>
     </section>
 
-    <section id="video-presentacion">
+    <section class="aparecer" id="video-presentacion">
         <h2 class="subtitle">Video de Presentación</h2>
         <div style="display: flex; justify-content: center;">
             <iframe 
@@ -54,111 +54,30 @@
         </div>
     </section>
 
-    <section id="datos-contacto">
-        <h2 class="subtitle">Datos de Contacto</h2>
-        <ul>
-            <li>Teléfono: 0996416931</li>
-            <li>Email: ddrouet@espol.edu.ec</li>
-        </ul>
-        <div style="margin-top: 10px;">
-            <strong>Ubicación:</strong>
-            <p>Escuela Superior Politécnica del Litoral (ESPOL) - Guayaquil, Ecuador</p>
-            <div style="display: flex; justify-content: center; align-items: center;">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.527907396059!2d-79.94364268475857!3d-2.144893439125474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d57a66dfd897f7d%3A0x75c5c4acaa14b6bb!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses-419!2sec!4v1684217253139!5m2!1ses-419!2sec"
-                    width="100%" 
-                    height="250" 
-                    style="border:0; max-width: 600px;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
-            </div>
-        </div>
-    </section>
-
-    <section id="educacion">
+    <section class="aparecer" id="educacion">
         <h2 class="subtitle">Educación</h2>
         <article>
-            <h3>[Título Obtenido/en proceso]</h3>
+            <h3>Título Obtenido/en proceso</h3>
             <p><strong>Institución:</strong> ESPOL</p>
             <p><strong>Duración:</strong> 2023 - pronto</p>
         </article>
     </section>
 
-    <section id="formulario-contacto">
-        <h2 class="subtitle">Formulario de Contacto</h2>
-        <form action="#" method="post" style="display: flex; flex-direction: column; gap: 16px; max-width: 400px; margin: 0 auto;">
-            <label for="nombre">Nombre completo:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="motivo">Motivo de contacto:</label>
-            <select id="motivo" name="motivo" required>
-                <option value="">Seleccione una opción</option>
-                <option value="consulta">Consulta</option>
-                <option value="trabajo">Oferta de trabajo</option>
-                <option value="otro">Otro</option>
-            </select>
-
-            <fieldset>
-                <legend>¿Desea recibir respuesta?</legend>
-                <label>
-                    <input type="radio" name="respuesta" value="si" required>
-                    Sí
-                </label>
-                <label>
-                    <input type="radio" name="respuesta" value="no" required>
-                    No
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Áreas de interés:</legend>
-                <label>
-                    <input type="checkbox" name="interes[]" value="desarrollo" required>
-                    Desarrollo
-                </label>
-                <label>
-                    <input type="checkbox" name="interes[]" value="soporte" required>
-                    Soporte
-                </label>
-                <label>
-                    <input type="checkbox" name="interes[]" value="investigacion" required>
-                    Investigación
-                </label>
-            </fieldset>
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <section id="justificacion">
-        <h2 class="subtitle">Justificación del uso de etiquetas HTML semánticas</h2>
+    <section class="aparecer" id="justificacion">
+        <h2 class="subtitle">Mas sobre mi</h2>
         <p>
-            El uso de etiquetas semánticas en HTML mejora la estructura, accesibilidad y comprensión del contenido tanto para los navegadores como para los usuarios. Puedes aprender más sobre semántica HTML en 
-            <a href="https://developer.mozilla.org/es/docs/Glossary/Semantics" target="_blank">MDN Web Docs</a>.
+            Soy estudiante de Ingeniería en Computación en la Escuela Superior Politécnica del Litoral (ESPOL) en Guayaquil, Ecuador. Me apasiona la programación y el desarrollo de software, y tengo experiencia en proyectos académicos y colaborativos. Busco oportunidades para aplicar mis habilidades técnicas y aprender en un entorno profesional. 
+            <a href="https://www.espol.edu.ec/es" target="_blank">Espol</a>.
         </p>
 
         <h3>Idiomas</h3>
-        <table>
-            <tr>
-                <th>Idioma</th>
-                <th>Nivel</th>
-            </tr>
-            <tr>
-                <td>Español</td>
-                <td>Nativo</td>
-            </tr>
-            <tr>
-                <td>Inglés</td>
-                <td>B1</td>
-            </tr>
-        </table>
+        <ol>
+            <li>Español - Nativo</li>
+            <li>Inglés - B1</li>
+        </ol>
 
-        <h3>Tabla de ejemplo de conocimientos</h3>
-        <table>
+        <h3>Tabla de conocimientos</h3>
+        <table class="tabla-conocimientos">
             <tr>
                 <th></th>
                 <th>Lenguaje</th>
@@ -189,7 +108,7 @@
         </ul>
     </section>
 
-    <section id="referencias">
+    <section class="aparecer" id="referencias">
         <h2 class="subtitle">Referencias</h2>
         <article>
             <blockquote>
@@ -223,8 +142,86 @@
         </article>
     </section>
 
-    <footer>
+    <section class="aparecer" id="datos-contacto">
+        <h2 class="subtitle">Datos de Contacto</h2>
+        <ul>
+            <li>Teléfono: 0996416931</li>
+            <li>Email: ddrouet@espol.edu.ec</li>
+        </ul>
+        <div style="margin-top: 10px;">
+            <strong>Ubicación:</strong>
+            <p>Escuela Superior Politécnica del Litoral (ESPOL) - Guayaquil, Ecuador</p>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.527907396059!2d-79.94364268475857!3d-2.144893439125474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d57a66dfd897f7d%3A0x75c5c4acaa14b6bb!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses-419!2sec!4v1684217253139!5m2!1ses-419!2sec"
+                    width="100%" 
+                    height="250" 
+                    style="border:0; max-width: 600px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="aparecer" id="formulario-contacto">
+        <h2 class="subtitle">Formulario de Contacto</h2>
+        <form action="#" method="post" style="display: flex; flex-direction: column; gap: 16px; max-width: 400px; margin: 0 auto;">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="motivo">Motivo de contacto:</label>
+            <select id="motivo" name="motivo" required>
+                <option value="">Seleccione una opción</option>
+                <option value="consulta">Consulta</option>
+                <option value="trabajo">Oferta de trabajo</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <fieldset>
+                <legend>¿Desea recibir respuesta?</legend>
+                <label>
+                    <input type="radio" name="respuesta" value="si" required>
+                    Sí
+                </label>
+                <label>
+                    <input type="radio" name="respuesta" value="no" required>
+                    No
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Áreas de interés:</legend>
+                <label>
+                    <input type="checkbox" name="interes[]" value="desarrollo" required>
+                    Desarrollo
+                </label>
+                <label>
+                    <input type="checkbox" name="interes[]" value="soporte">
+                    Soporte
+                </label>
+                <label>
+                    <input type="checkbox" name="interes[]" value="investigacion">
+                    Investigación
+                </label>
+            </fieldset>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="aparecer">
         <p>© 2025 Danilo Drouet. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+    document.querySelector('#formulario-contacto form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('¡Formulario enviado correctamente!');
+    });
+    </script>
 </body>
 </html>
